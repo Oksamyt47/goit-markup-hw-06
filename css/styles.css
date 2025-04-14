@@ -150,52 +150,52 @@ button {
   }
   
   .header-nav-link {
-      display: block;
-      padding: 24px 0;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-      color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
       
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   
-    .active {
-      position: relative;
-    }
+  .active {
+    position: relative;
+  }
   
-    .active::after {
-      content: "";
-      position: absolute;
-      background-color: #404bbf;
-      border-radius: 2px;
-      height: 4px;
-      width: 100%;
-      left: 0;
-      bottom: -1px;
-    }
+  .active::after {
+    content: "";
+    position: absolute;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+  }
   
-    .contacts {
-      font-style: normal;
-      display: block;
-    }
+  .contacts {
+    font-style: normal;
+    display: block;
+  }
     
-    .header-contacts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+  .header-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-        .header-contacts-link {
-          display: block;
-          font-size: 12px;
-          line-height: 1.17;
-          letter-spacing: 0.04em;
-          color: #434455;
+  .header-contacts-link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
     
-          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
     
     .header-nav-link:hover,
     .header-nav-link:focus,
@@ -209,21 +209,21 @@ button {
 
 @media screen and (min-width: 1158px) {
   .header-logo {
-      margin-right: 76px;
-    }
+    margin-right: 76px;
+  }
 
-        .header-contacts-list {
-          flex-direction: row;
-          align-items: center;
-          gap: 40px;
-        }
+  .header-contacts-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
 
-                .header-contacts-link {
-                  padding: 24px 0;
-                  font-size: 16px;
-                  line-height: 1.5;
-                  letter-spacing: 0.02em;
-                }
+  .header-contacts-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
 
 /* #endregion */
@@ -251,6 +251,128 @@ button {
   pointer-events: auto;
 
 }
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mobile-menu-close {
+  position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-svg-close {
+  fill: #2E2F42;
+}
+
+.mobile-menu-nav {
+  margin-bottom: auto;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;}
+
+.mobile-nav-item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.mobile-nav-link {}
+
+.mobile-nav-accent {
+  color: #404bbf;
+}
+
+
+
+.mobile-contacts {
+  
+}
+
+.mobile-contacts-list {
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile-contacts-item {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mobile-contacts-accent {
+  color: #404bbf;
+}
+
+.mobile-contacts-link {}
+
+
+
+
+.mobile-social {
+  margin-top: 48px;
+}
+
+.mobile-social-list {
+  display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mobile-social-item {
+  width: 40px;
+    height: 40px;
+}
+
+.mobile-social-link {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-social-link:hover,
+.mobile-social-link:focus {
+  background-color: #404bbf;
+}
+
+.mobile-social-icons {
+  fill: #f4f4fd;
+}
+
+
 
 
 
